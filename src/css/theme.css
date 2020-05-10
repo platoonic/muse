@@ -1,0 +1,66 @@
+
+/*
+	
+
+	Muse - Jamming Platform for Musicians.
+	By: Platoonic
+
+
+*/
+
+body{
+	font-family: 'Chivo', sans-serif;
+	background-color: #262626;
+	color:white;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 15px 0;
+}
+
+.button{
+	text-decoration: none;
+	display: inline-block;
+	color:white;
+	padding:15px 25px;
+	border-radius: 25px;
+	font-size:18px;
+}
+
+.button svg{
+	margin-right:10px;
+}
+
+.button.blue{
+	background-color:#5da8e5;
+}
+
+.button.blue:hover{
+	background-color:#79bdf4;
+}
+
+.button.pink{
+	background-color:#d52398;
+}
+
+.button.pink:hover{
+	background-color:#e842af;
+}
+
+.home{
+	margin:0 auto;
+	text-align: center;
+	margin-top:15%;
+}
+
+.home .description{
+	color:#6e6e6e;
+}
+
+.home .buttons{
+	margin-top:25px;
+}
+
+.home .buttons a{
+	margin-right:10px;
+}
