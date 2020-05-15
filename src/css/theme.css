@@ -61,6 +61,13 @@ h1,h2,h3,h4,h5,h6{
 	background-color:#99dd90;
 }
 
+.button.red{
+	background-color:#db4d4d;
+}
+.button.red:hover{
+	background-color:#e35959;
+}
+
 .button.small{
 	font-size:15px;
 	padding:12px 25px;
@@ -138,7 +145,6 @@ nav.instruments a{
 	margin-right:10px;
 	width:100px;
 	float:left;
-	
 	padding:20px 0;
 	text-align: center;
 }
@@ -156,6 +162,118 @@ nav.instruments span{
 .active{
 	background-color:#2d2d2d;
 }
+
+.session{
+	margin-top:30px;
+}
+
+.session .latency{
+	color: #43cc6c;
+	font-size:14px;
+	font-weight: 400;
+	float:right;
+	margin-top:20px;
+}
+
+.participants{
+	border:1px solid #3b3b3b;
+	padding:50px 15px;
+	box-sizing: border-box;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+.participants h4{
+	font-weight: 300;
+}
+
+.participant{
+	float:left;
+	margin-right:40px;
+}
+
+.participant img{
+	float:left;
+}
+
+.participant .data{
+	float:left;
+	margin-left:10px;
+}
+
+.participant .data svg{
+	margin-left:10px;
+	color:#43cc6c;
+}
+
+.participant .data input{
+	margin-top:10px;
+	width:100px;
+}
+
+.controls{
+	margin-top:20px;
+}
+
+.controls span{
+	font-size:14px;
+	margin-right:10px;
+}
+
+.controls .tempo-box{
+	position:relative;
+	display:inline-block;
+}
+
+.controls .tempo{
+	background-color:#525252;
+	width:90px;
+	font-size:14px;
+	color:#9e9e9e;
+	padding:10px 15px;
+}
+
+.controls .tempo-box span{
+	position:absolute;
+	right:3px;
+	top:10px;
+	color:#9e9e9e;
+}
+
+.metronome{
+	text-decoration: none;
+	color:white;
+	font-size:13px;
+	background-color:#3b3b3b;
+	padding:10px 15px;
+	border-radius:25px;
+	margin-left:10px;
+}
+
+.metronome span{
+	padding-left:10px;
+}
+
+.metronome .off{
+	color:#e3645b;
+}
+
+.metronome .on{
+	color:#43cc6c;
+}
+
+.jam-buttons{
+	margin-top:17px;
+	float:right;
+}
+
+.jam-buttons a{
+	margin-left:10px;
+	font-size:14px;
+	padding:10px 20px;
+}
+
+
 
 
 

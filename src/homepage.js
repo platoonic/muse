@@ -7,10 +7,10 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 //Components
 import JoinSession from './JoinSession'
 
-export default function Homepage(){
+export default function Homepage(props){
 	//Join Session Box state (Hidden by default)
-	const [showJoin, joinVisible] = useState(1)
-	const [showCreate, createVisible] = useState(1)
+	const [showJoin, joinVisible] = useState(0)
+	const [showCreate, createVisible] = useState(0)
 	return(
 		<div className="container">
 			<div className="row">
@@ -26,7 +26,7 @@ export default function Homepage(){
 				{ showJoin == 1 &&
 					<div>
 						<div class="overlay" onClick={() => { joinVisible(0) }}/>
-						<JoinSession />
+						<JoinSession setInsideSession={props.setInsideSession}/>
 					</div>
 				}
 			</div>

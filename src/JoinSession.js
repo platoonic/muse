@@ -10,17 +10,17 @@ import Violin from './imgs/violin.png'
 //Icons
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
-export default function JoinSession(){
+export default function JoinSession(props){
 	const [instrument, setInstrument] = useState("piano")
 	return(
-		<div class="overlay-box">
-			<div class="session-code">
+		<div className="overlay-box">
+			<div className="session-code">
 				<h3>Session Code</h3>
-				<input type="text" placeholder="" name="session-code" />
+				<input type="text" placeholder="3WZ4W" name="session-code" />
 			</div>
-			<div class="instrument">
+			<div className="instrument">
 				<h3>Instrument</h3>
-				<nav class="instruments">
+				<nav className="instruments">
 					<a onClick={() => { setInstrument("piano") }} className={instrument == "piano" && "active"} href="#">
 						<img src={Piano} alt="Piano" />
 						<span>Piano</span>
@@ -46,9 +46,9 @@ export default function JoinSession(){
 					</a>
 				</nav>
 			</div>
-			<div class="clear" />
-			<div class="join">
-				<a class="button green small" href="#">Join <FontAwesomeIcon icon={faChevronRight}/></a>
+			<div className="clear" />
+			<div className="join">
+				<a onClick={() => {props.setInsideSession(1)} } className="button green small" href="#">Join <FontAwesomeIcon icon={faChevronRight}/></a>
 			</div>
 		</div>
 	)
